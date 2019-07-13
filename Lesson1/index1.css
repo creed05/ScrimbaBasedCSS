@@ -1,0 +1,9 @@
+/*The flexbox selects the container's class tag and then you make it a
+flexbox by usng the display: flex; property. Some things to note about
+flexboxs, they are block elements and will take up the width of the window
+unless you give them some margin. They also default to horizontal.*/
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
