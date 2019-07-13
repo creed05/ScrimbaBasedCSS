@@ -1,0 +1,15 @@
+/*Part 1: The flexbox container has 2 axis a horizontal axis (Called the main axis)
+and a vertical axis. (called the cross axis). The default is the horizontal
+axis (left to right) as that is the typical way that people read, and
+therefore is the most commonly needed direction. */
+
+/*Part 2: There is a commented out section in the .container selector.
+remove the comment brackets and this will change the direction of the main
+axis in the flex container to be in the cross direction. This will affect
+other flexbox properties later as you will see in further lessons. */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  /* flex-direction: column; */
+}
