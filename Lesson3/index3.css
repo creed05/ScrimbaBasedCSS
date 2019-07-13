@@ -1,0 +1,15 @@
+/* Part 1: Spacing out elements along the main axis uses the property justify-content.
+Remember that this is typically left-right, but if you have changed the
+flex-direction to coloumn, then it will be up down. */
+
+/* Part 2: There are 6 parameters that you could put into justify-content
+they are: flex-start flex-end center space-around space-between space-evenly.
+Try each of them to see what affects they have. By default the parameter
+that is picked is flex-start which groups things to the right side of the
+flexbox. */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  justify-content: ;
+}
