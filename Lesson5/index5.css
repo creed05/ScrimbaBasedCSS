@@ -1,0 +1,42 @@
+/* Part 1: We can change the size of the clex elements by targeting
+the flex items in the flex container. In our case that is the divs in the
+container. We use the flex: property to do this. Flex is actually a shorthand
+for  flex-grow, flex-shrink, flex-basis, but we will look at those in a later
+lesson. You will notice a commented out ruleset that targets to the divs using
+flex. It is set to 1. Setting flex to one means that the items will each
+have a relative width of 1 and add up to whatever one full width of the
+flexbox is. */
+
+
+/* Part 2: The old way of making items take up the full width was to do a
+calculation 3 items means 33.33% each. Then if you later added a 4th item you
+would need to change everything to 25%. With flexbox the 1 will always add up
+to 100%. Go to the index.html to add a fourth item to test this. */
+
+/* part3: Now there is a third ruleset that is commented out. It is targeting
+the search item. It sets the flex to 2 which means that search will be 2 times
+as wide as everything else. Also notice that the slector is not just .search,
+but is .container > .search This is because of how CSS works. They are cascading
+rules. .container > div had a higher specificity than .search so the rule set
+for .search would never have shown up. by making .container > .search we created
+a ruleset that was more specific than .container > div so it does show up now.
+*/
+
+/* part 4: comment out the .container > div ruleset and just leave the
+.container > .search, now it will grow and shrink while the home and Logout
+remain fixed in size. Now try on your own to write a ruleset that will have the
+search remain a fixed size while the Logout and Home flex instead. */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+/* .container > div {
+  flex: 1;
+} */
+
+/* .container > .search {
+  flex: 2;
+}
+*/
