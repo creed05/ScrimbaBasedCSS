@@ -1,0 +1,27 @@
+/* Part 1: To position a single item along the main axis you need to target it.
+ On line 20 to 23 there is a commented out rule set that targets logout and that
+ moves the logout to the left side. */
+
+/* Part 2: To position both search and logout you can target search and position
+it, since logout comes after it in the HTML, it will be positioned after it. On
+line 21 to 23 there is a commented out rule set that targets Search and that
+moves the Search and the Logout to the left side.  */
+
+/* Part3: In the container ruleset there is a commented out justify-content
+property with the flex-end selected. When you remove the comments the contents
+will be moved to the left. Now write a ruleset that moves the home to the
+right side of the flexbox. */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+ /* .logout {
+  margin-left: auto;
+} */
+
+/* .Search {
+ margin-left: auto;
+} */
