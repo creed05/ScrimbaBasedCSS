@@ -1,0 +1,53 @@
+/* Part 1: This time we are going to look at the flex shortcut property in
+detail. flex is short for flex-grow, flex-shrink, and flex-basis. By puting a
+1 value in flex it is the same as putting a 1 in flex-grow, a 1 in flex-shrink,
+and a 0 in flex-basis. So what does those three things do? */
+
+/* flex-grow: This is an integer value. After the items each take the width that
+they are from the container any extra width is assigned to each item based on
+whatever the integer value that they have in.  If you put a 1 in each of .home
+and .logout then they get assigned them at the same rate. If one had a 5 and the
+other had a 1 then the one with a 5 would grow 5 times faster than the one with
+the 1. The default value is 0.  */
+
+/* flex-shrinK: This is also an integer value. When the items have enough room
+they can be the width that they are supposed to be. However when the container
+is too small then the items have to shrink. If you put a 1 in each of the .home
+and .logout then they each lose size at an equal rate. */
+
+/* flex-basis: This is a way of setting the base width in pixels for the flex
+items. */
+
+/* Part 2: Comment out the different properties to play with the affects that
+each ruleset has.*/
+
+/* Part 3: There is a commented out section of rulesets at the bottom. Remove
+the existing rulesets and make the commented out ones take the place of the
+old ones. Flex can so all three things at once. Now make it so that when the
+screen is wider than 400px make it so that the logout grows at 10 times the
+rate of home. */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+.home {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.logout {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+/*.home {
+  flex: 1 1 200px;
+}
+
+.logout {
+  flex: 1 1 200px;
+}*/
