@@ -1,0 +1,30 @@
+/* Part 1: flex items by default take up 100% of the height of the flex
+container. We have made this container taller to match the height of your
+broswer window and you can see that as you change the browser window size that
+the beight of the flex items is changing as well. Something to notice is that
+they will not go to a size that is smaller than they are by default. Also this
+only works because in the basic.css file we have set the html and body to a
+height of 100%. Otherwise they would not be the size of the window, and since
+the were not the size of the window the child element that is the container
+would also not be the height of the window.  */
+
+/* part 2: The reason that the flex items take up the entire height of the
+container is that there is a property called align-items: that is set to a
+default of stretch. Other values that it will accept are: flex-start, flex-end,
+center, baseline, stretch (default). Try these out to see what they do. */
+
+/* part 3: Go to the html file and remove the other list items, except the first
+one. Now use the align-items and the justify-content properties to create a
+centered item.  */
+
+/* Part 4: You can also target and move a single item at a time by using the
+property align-self. Use this property to write rulesets that move the Home
+item to the top, the search to the center, and the logout to the
+bottom.   */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+}
