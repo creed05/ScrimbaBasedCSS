@@ -1,30 +1,22 @@
-/* Part 1: flex items by default take up 100% of the height of the flex
-container. We have made this container taller to match the height of your
-broswer window and you can see that as you change the browser window size that
-the beight of the flex items is changing as well. Something to notice is that
-they will not go to a size that is smaller than they are by default. Also this
-only works because in the basic.css file we have set the html and body to a
-height of 100%. Otherwise they would not be the size of the window, and since
-the were not the size of the window the child element that is the container
-would also not be the height of the window.  */
+/* Part 1: In this lesson we are changing the direction of the main axis. We
+do this by using the property flex-direction: column. This changes the main
+axis to the vertical. Since justify-content affects how things are spread out
+along the main axis the justify-content now controls the vertical axis instead
+of the horizontal like normal. Also the align-items will now control the
+horizontal instead of the vertical. This is because it controls whatever the
+cross axis is. Try playing around the with values that you
+can use for the justify-content property and the align-items properties
+to see how this works. */
 
-/* part 2: The reason that the flex items take up the entire height of the
-container is that there is a property called align-items: that is set to a
-default of stretch. Other values that it will accept are: flex-start, flex-end,
-center, baseline, stretch (default). Try these out to see what they do. */
+/* Part 2: Use justify-content and align content to make all three end up in
+the bottom left corner. */
 
-/* part 3: Go to the html file and remove the other list items, except the first
-one. Now use the align-items and the justify-content properties to create a
-centered item.  */
-
-/* Part 4: You can also target and move a single item at a time by using the
-property align-self. Use this property to write rulesets that move the Home
-item to the top, the search to the center, and the logout to the
-bottom.   */
 
 .container {
   border: 5px solid #ffcc5c;
   display: flex;
   height: 100%;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
