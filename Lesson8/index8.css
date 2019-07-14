@@ -1,0 +1,19 @@
+/* Part 1: By default the flex items stay on one horizontal line. This is
+because there is a default wrap setting. The property is called flex-wrap
+and the default value is no wrap. So in the example below the width of each
+div is set to 300 px. So when the container is bigger than that they stay
+300 px wide, but when the box is smaller than that (make the window skinner)
+The width value is ignored and they start to scale again. */
+
+/* Part 2: Change the flex-wrap: to wrap and then make the window skinner and
+see what happens.  */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  width: 300px;
+}
