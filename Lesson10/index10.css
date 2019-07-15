@@ -2,18 +2,43 @@
 It already works a little but it does not scale nicely. We are going to make
 it so that when you change the size of the window the flex items start to wrap.
  To do this we need to create a different rule for when the window is too narrow.
- We could do this simply with a flex*/
+ If the flex-items each had a defined size then we could use a flex-wrap on the
+ container, but that would lead to it not scaling when we want it to and also
+ to not wrapping when we want but when the browser became too small. Instead we
+ can control it by using something called a media inquiry. A media inquiry is
+ when you have the css ask the browser a question about its width, height,
+ resolution, and orientation (portrait, or landscape). Then you have the css
+ behave differently depending on the answer. It is how you cna write a website
+ that will look one way on a cell phone and a different way on a desktop without
+ having to actually create two different websites. It makes the content more
+ dynamic. */
+
+/* Part 2: So below there is the code for the media inquiry at the 600px width
+value. This will force there to be two rows when the window gets to be less than
+600px. Now use what you know to make it so that when the width gets below 400px
+it wraps so that each item takes up 100% of the row. */
 
 .container {
   border: 5px solid #ffcc5c;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.container > li{
-  width: 300px;
 }
 
 .search {
   flex: 1;
 }
+
+/*
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex: 1 1 50%;
+  }
+
+  .search > input {
+    text-align: center;
+  }
+}
+*/
