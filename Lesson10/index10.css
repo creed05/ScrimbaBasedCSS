@@ -1,0 +1,19 @@
+/* Part 1: This time we are going to construct a mostly working navbar.
+It already works a little but it does not scale nicely. We are going to make
+it so that when you change the size of the window the flex items start to wrap.
+ To do this we need to create a different rule for when the window is too narrow.
+ We could do this simply with a flex*/
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > li{
+  width: 300px;
+}
+
+.search {
+  flex: 1;
+}

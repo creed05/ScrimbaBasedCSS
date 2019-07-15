@@ -11,7 +11,7 @@ see what happens.  */
 .container {
   border: 5px solid #ffcc5c;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .container > div {
