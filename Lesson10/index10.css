@@ -1,0 +1,29 @@
+/* Part 1: This lesson looks at order. You can move flex items around
+and change the order that they appear in, independent of the source order.
+ */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+/* Part 2: By default the source order for each item is set to 0, which
+just means that the order that the items appear in the source code will
+determine their order. So the items below will not change the order that
+they appear at all. The order property specifies the order of a flexible
+item relative to the rest of the flexible items inside the same container.
+*/
+
+/* Part 3: Use the order property to put the items in reverse order.
+*/
+.item1 {
+  order: 0;
+}
+
+.item2 {
+  order: 0;
+}
+
+.item3 {
+  order: 0;
+}
