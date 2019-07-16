@@ -17,7 +17,7 @@ item relative to the rest of the flexible items inside the same container.
 /* Part 3: Use the order property to put the items in reverse order.
 */
 .item1 {
-  order: 0;
+  order: 0;s
 }
 
 .item2 {
